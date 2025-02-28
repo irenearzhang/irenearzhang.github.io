@@ -24,6 +24,9 @@ additional_links:
   icon: fab fa-brands fa-linkedin
   url: https://www.linkedin.com/in/irenearzhang/
 
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/profile_pic.png
+
 content:
   - title: A Little More About Me
     layout: text
