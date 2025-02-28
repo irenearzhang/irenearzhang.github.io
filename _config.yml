@@ -52,13 +52,8 @@ darkmode: false
 # about_title: About Me (Use this to override about section title)
 about_profile_image: [alt text](/images/profile_pic.png "Picture of Irene standing in front of a mirror, with a frame in the style of a Duzhe magazine cover. She is a woman in a white coat.")
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-
+  I am a Chinese-Canadian writer and policy analyst currently based in Palo Alto, California. Currently, I'm finishing my Master's degree at Stanford.
+  I'm interested in technology, politics, and culture, with a broad focus on the contemporary Sinophone world. I currently write about Chinese AI for [ChinaTalk](https://substack.com/@irenezhang). I've previously worked at the Center for Strategic and International Studies
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
