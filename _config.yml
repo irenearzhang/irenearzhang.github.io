@@ -29,6 +29,12 @@ about_profile_image: images/profile_pic.png
 about_content:
   Here you go
 
+content:
+  - title: Writing
+    layout: text
+    content:
+      here
+
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
