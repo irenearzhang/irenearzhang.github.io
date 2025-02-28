@@ -6,14 +6,14 @@ repository: Git repository where your resume will be hosted, only required if yo
 version: 2
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
-# email_title: Email (Email title override)
-phone: Your phone number (optional)
-# phone_title: Phone (Phone title override)
-website: Your website (eg. https://google.com)(optional)
-# website_title: Web (Website title override)
+name: Irene
+# title: Your job title
+email: firstnamelastname0830 at gmail dot com
+email_title: Email (Email title override)
+# phone: Your phone number (optional)
+phone_title: Phone (Phone title override)
+# website: Your website (eg. https://google.com)(optional)
+website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
 darkmode: false
