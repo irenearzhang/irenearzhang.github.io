@@ -16,7 +16,7 @@ email: firstnamelastname0830 at gmail dot com
 website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
-darkmode: true
+darkmode: false
 
 # Additional icon links
 additional_links:
