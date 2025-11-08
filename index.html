@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writer & Researcher Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-text: #2C2C2C;
+            --secondary-text: #6B6B6B;
+            --accent-color: #4A7C7E;
+            --background: #F8FAFA;
+            --subtle-bg: #F0F5F5;
+            --header-bg: #E8F1F1;
+            --border-color: #D1E0E0;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--primary-text);
+            background-color: var(--background);
+        }
+        
+        .serif-font {
+            font-family: 'Crimson Text', serif;
+        }
+        
+        .article-card {
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+            background-color: white;
+        }
+        
+        .article-card:hover {
+            border-left-color: var(--accent-color);
+            background-color: var(--subtle-bg);
+            transform: translateX(4px);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.6s ease;
+        }
+        
+        .header-section {
+            background: linear-gradient(135deg, var(--header-bg) 0%, #E0ECEC 100%);
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, var(--border-color) 50%, transparent 100%);
+            margin: 4rem 0;
+        }
+        
+        .category-tag {
+            background-color: rgba(74, 124, 126, 0.1);
+            color: var(--accent-color);
+        }
+        
+        .publication-date {
+            color: var(--secondary-text);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="header-section">
+        <div class="max-w-4xl mx-auto px-6 py-16 text-center">
+            <h1 class="serif-font text-4xl md:text-5xl font-semibold text-gray-800 mb-4">
+                Writer & Researcher
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Exploring the intersection of digital culture, technology, and human experience through rigorous research and accessible writing.
+            </p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <main class="max-w-4xl mx-auto px-6 py-16">
+        <section class="mb-20 fade-in">
+            <div class="text-center mb-12">
+                <h2 class="serif-font text-3xl font-semibold text-gray-800 mb-4">About</h2>
+                <div class="w-16 h-1 bg-teal-600 mx-auto"></div>
+            </div>
+            
+            <div class="prose prose-lg max-w-none text-center">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    I am a writer and researcher specializing in contemporary cultural analysis, digital humanities, and the intersection of technology and society. My work explores how digital transformation shapes human experience, from individual identity formation to collective social movements.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    With a background in cultural studies and digital media, I bring interdisciplinary perspectives to my writing, combining rigorous academic research with accessible public discourse. My articles and essays have appeared in both scholarly publications and mainstream media outlets, bridging the gap between academic insight and public understanding.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-8">
+                    Currently, my research focuses on digital identity, online communities, and the evolving nature of public discourse in networked societies. I am particularly interested in how marginalized voices use digital platforms to create counter-narratives and build alternative communities of practice.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mt-12 text-left">
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="serif-font text-xl font-semibold text-gray-800 mb-4">Research Interests</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>• Digital Culture & Society</li>
+                            <li>• Online Identity Formation</li>
+                            <li>• Social Media & Community Building</li>
+                            <li>• Cultural Studies & Media Theory</li>
+                            <li>• Digital Humanities Methodology</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-sm">
+                        <h3 class="serif-font text-xl font-semibold text-gray-800 mb-4">Professional Background</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>• Cultural Studies Research</li>
+                            <li>• Digital Media Analysis</li>
+                            <li>• Academic & Public Writing</li>
+                            <li>• Conference Presentations</li>
+                            <li>• Peer Review & Editorial Work</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Works Archive -->
+        <section class="fade-in">
+            <div class="text-center mb-12">
+                <h2 class="serif-font text-3xl font-semibold text-gray-800 mb-4">Selected Works</h2>
+                <div class="w-16 h-1 bg-teal-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    A collection of articles, research papers, essays, and reviews exploring digital culture and contemporary society.
+                </p>
+            </div>
+            
+            <div id="articles-container">
+                <!-- Article entries will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-20">
+        <div class="max-w-6xl mx-auto px-6 py-8">
+            <div class="text-center text-gray-600">
+                <p>&copy; 2024 Writer & Researcher Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
