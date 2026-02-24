@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --coral: #D95F6B;
+  --mint:  #4ECBA0;
+  --text:  #1A1A1A;
+  --muted: #888888;
+  --bg:    #FAFAFA;
+  --border: #E8E8E8;
+  --sidebar-width: 220px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  display: flex;
+}
+
+/* ── Sidebar ── */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--sidebar-width);
+  height: 100vh;
+  padding: 52px 36px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border);
+}
+
+.sidebar-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--coral);
+  text-decoration: none;
+  line-height: 1.25;
+  margin-bottom: 36px;
+  display: block;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+nav a {
+  font-size: 13.5px;
+  font-weight: 400;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: color 0.15s ease;
+}
+
+nav a:hover {
+  color: var(--coral);
+}
+
+nav a.active {
+  color: var(--coral);
+  font-weight: 500;
+}
+
+.sidebar-email {
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  word-break: break-all;
+}
+
+.sidebar-email:hover {
+  color: var(--mint);
+}
+
+/* ── Main Content ── */
+
+.main {
+  margin-left: var(--sidebar-width);
+  padding: 72px 80px;
+  max-width: 860px;
+  width: 100%;
+}
+
+/* ── About Page ── */
+
+.about-photo {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 28px;
+  display: block;
+}
+
+.about-bio p {
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--text);
+  max-width: 520px;
+}
+
+.about-bio p + p {
+  margin-top: 16px;
+}
+
+/* ── List Pages (Journalism, Policy Research, Quotes) ── */
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 48px;
+  color: var(--text);
+}
+
+.publication-group {
+  margin-bottom: 40px;
+}
+
+.publication-name {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--mint);
+  padding-bottom: 10px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.article-list {
+  list-style: none;
+}
+
+.article-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px solid #F0F0F0;
+  gap: 20px;
+}
+
+.article-title {
+  font-size: 14px;
+  color: var(--text);
+  text-decoration: none;
+  flex: 1;
+  transition: color 0.15s ease;
+}
+
+.article-title:hover {
+  color: var(--coral);
+}
+
+.article-date {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 28px 24px 20px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .sidebar-name {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  nav {
+    flex-direction: row;
+    flex: none;
+    gap: 20px;
+  }
+
+  .sidebar-email {
+    width: 100%;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 40px 24px;
+  }
+}
