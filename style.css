@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Inter:wght@300;400;500&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -13,7 +13,7 @@
   --muted: #888888;
   --bg:    #FAFAFA;
   --border: #E8E8E8;
-  --sidebar-width: 220px;
+  --sidebar-width: 440px;
 }
 
 html, body {
@@ -44,8 +44,8 @@ body {
 }
 
 .sidebar-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-family: 'SUSE Mono', monospace;
+  font-size: 32px;
   font-weight: 700;
   color: var(--coral);
   text-decoration: none;
@@ -125,7 +125,7 @@ nav a.active {
 /* ── List Pages (Journalism, Policy Research, Quotes) ── */
 
 .page-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'SUSE Mono', monospace;
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 48px;
@@ -181,7 +181,7 @@ nav a.active {
 
 /* ── Responsive ── */
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   body {
     flex-direction: column;
   }
