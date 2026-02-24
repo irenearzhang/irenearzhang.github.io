@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:wght@300;400;500&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -13,7 +13,7 @@
   --muted: #888888;
   --bg:    #FAFAFA;
   --border: #E8E8E8;
-  --sidebar-width: 440px;
+  --sidebar-width: 280px;
 }
 
 html, body {
@@ -23,7 +23,7 @@ html, body {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 15px;
   line-height: 1.6;
   display: flex;
